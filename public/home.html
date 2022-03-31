@@ -994,7 +994,7 @@ function debounce(func,delay){
 let cartArr=[];
 let wishlistArr=[];
 async function designCourse(){
-let url = "http://127.0.0.1:5000/business"
+let url = "http://127.0.0.1:5000/development"
 try{
 let res=await fetch(url//,{
 //     "method": "GET",
@@ -1027,7 +1027,7 @@ function appenddesignCourse(data){
 
 // console.log(data);
 
-data.users.forEach((element) => {
+data.developments.forEach((element) => {
 
 
 
@@ -1107,7 +1107,7 @@ document.querySelector("#container_om1").append(div);
 
 
 async function shortAndFreeCourse(){
-let url = "http://127.0.0.1:5000/beforelogins"
+let url = "http://127.0.0.1:5000/designs"
 try{
 let res=await fetch(url)
 let data3= await res.json();
@@ -1128,7 +1128,7 @@ function shortandFreeCourse(data3){
 
 // console.log(data);
 
-data3.users.forEach((element) => {
+data3.designs.forEach((element) => {
 
 
 
@@ -1204,7 +1204,7 @@ document.querySelector("#container_om2").append(div);
 
 
 async function MostViewedCourse(){
-let url = "http://127.0.0.1:5000/beforelogins"
+let url = "http://127.0.0.1:5000/business"
 try{
 let res=await fetch(url//,{
 // "method": "GET",
@@ -1236,7 +1236,7 @@ function mostViewedCourse(data2){
 
 // console.log(data);
 
-data2.users.forEach((element) => {
+data2.bussiness.forEach((element) => {
 
 
 // console.log(element.image_480x270)
@@ -1315,7 +1315,7 @@ document.querySelector("#container_om3").append(div);
 
 
 async function ITCourse(){
-    let url = "http://127.0.0.1:5000/beforelogins"
+    let url = "http://127.0.0.1:5000/marketing"
     // console.log(url)
 
 try{
@@ -1349,7 +1349,7 @@ function  ItAndSoftware(data2){
 
 // console.log(data);
 
-data2.users.forEach((element) => {
+data2.marketings.forEach((element) => {
 
 
 // console.log(element.image_480x270)
@@ -1428,7 +1428,7 @@ document.querySelector("#container_om4").append(div);
 
 
 async function Music(){
-let url = "http://127.0.0.1:5000/beforelogins"
+let url = "http://127.0.0.1:5000/music"
 try{
 let res=await fetch(url//,{
 // "method": "GET",
@@ -1460,7 +1460,7 @@ function  music(data2){
 
 // console.log(data);
 
-data2.users.forEach((element) => {
+data2.musics.forEach((element) => {
 
 
 // console.log(element.image_480x270)
