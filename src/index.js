@@ -33,4 +33,5 @@ app.listen(PORT,async(req,res)=>{
         console.log(error);
     }
     console.log("Listening to ",PORT);
+    console.log("Listening to ",PORT);
 })
