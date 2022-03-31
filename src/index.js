@@ -7,6 +7,10 @@ const bodyParser=require("body-parser");
 const signupController=require("./controller/signup.controller");
 const loginController=require("./controller/login.controller");
 const businessController=require("./controller/business.controller")
+const dessignsController=require("./controller/dessign.controller")
+const developmentController=require("./controller/development.controller")
+const marketingController=require("./controller/marketing.controller")
+const musicController=require("./controller/music.controller")
 app.use(express.json());
 app.use(bodyParser.json());
 const PORT=process.env.PORT || 5000;
@@ -17,6 +21,10 @@ app.use(cors({
     origin:"http://127.0.0.1:5000"
 }));
 app.use("/business",businessController);
+app.use("/designs",dessignsController);
+app.use("/development",developmentController);
+app.use("/marketing",marketingController);
+app.use("/music",musicController);
 app.use("/signup",signupController);
 app.use("/login",loginController);
 app.get("/udemy",(req,res)=>{
@@ -33,6 +41,5 @@ app.listen(PORT,async(req,res)=>{
         console.log(error);
     }
     console.log("Listening to ",PORT);
-    console.log("Listening to ",PORT);
-    console.log("Listening to ",PORT);
+    
 })
