@@ -1,5 +1,11 @@
 function navbar(){
     return`  <div id="navbar">
+    <a id="toggle_button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+   
     <div id="logo" onclick=window.location.href="index.html"><img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt=""></div>
     <div id="cat">
         <header>

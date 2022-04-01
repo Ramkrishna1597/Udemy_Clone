@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
     rel="icon"
-    href="https://logos-world.net/wp-content/uploads/2021/11/Udemy-Emblem.png"
+    href="https://www.udemy.com/staticx/udemy/images/v8/favicon-32x32.png"
     type="image/x-icon"
   />
-    <title>Home</title>
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
     <script src="https://kit.fontawesome.com/9b33d8169c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/a_login_navbar.css">  
     <link rel="stylesheet" href="styles/footer.css">
@@ -39,6 +39,12 @@ a{
 
     
     <div id="navbar">
+        <a id="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+    
+          </a>
         <div id="logo" onclick=window.location.href="home.html"><img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt=""></div>
         <div id="cat">
             <header>
@@ -953,6 +959,7 @@ const displayData = (videosArrays) =>{
         
         let image = document.createElement("img")
         image.src=video.image_240x135
+        image.style.height = "122px";
         div2.append(h3,p1,p2,p3)
         videoCard.append(image);
         main_div.append(videoCard,div2,div3)
@@ -1027,6 +1034,7 @@ heading.textContent=`Top courses in Development`
 
 let image=document.createElement("img");
 image.src=element.image_240x135;
+image.style.height = "122px";
 
 let h4=document.createElement("h4");
 
@@ -1124,6 +1132,7 @@ div.id="box2_om"
 
 let image=document.createElement("img");
 image.src=element.image_240x135;
+image.style.height = "122px";
 
 let h4=document.createElement("h4");
 
@@ -1235,6 +1244,7 @@ let top=document.createElement("div");
 div.id="box3_om"
 let image=document.createElement("img");
 image.src=element.image_240x135;
+image.style.height = "122px";
 
 let h4=document.createElement("h4");
 h4.style.fontSize="14px";
@@ -1348,6 +1358,7 @@ let top=document.createElement("div");
 div.id="box4_om"
 let image=document.createElement("img");
 image.src=element.image_240x135;
+image.style.height = "122px";
 
 let h4=document.createElement("h4");
 h4.style.fontSize="14px";
@@ -1460,6 +1471,7 @@ let top = document.createElement("div")
 
 let image=document.createElement("img");
 image.src=element.image_240x135;
+image.style.height = "122px";
 
 let h4=document.createElement("h4");
 h4.style.fontSize="15px";
