@@ -11,8 +11,11 @@ const dessignsController=require("./controller/dessign.controller")
 const developmentController=require("./controller/development.controller")
 const marketingController=require("./controller/marketing.controller")
 const musicController=require("./controller/music.controller")
+const personaldevelopment=require("./controller/personaldevelopment.controller")
+const ratingcontroller=require("./controller/rating.controller")
+const searchcontroller=require("./controller/search.controller")
 app.use(express.json());
-app.use(bodyParser.json());
+app.use(bodyParser.json()); 
 const PORT=process.env.PORT || 5000;
 app.use(express.static("public"));
 app.use(cors());
@@ -27,11 +30,14 @@ app.use("/marketing",marketingController);
 app.use("/music",musicController);
 app.use("/signup",signupController);
 app.use("/login",loginController);
-app.get("/udemy",(req,res)=>{
+app.use("/ratings",ratingcontroller);
+app.use("/personaldevelopment",personaldevelopment);
+app.use("/search",searchcontroller);
+app.get("/udemy",(req,res)=>{ 
     res.set({
         "ALLow-access-ALLow-Origin":"*"
     })
-    return res.redirect("index.html");
+    return res.redirect("index.html"); 
 })
 
 app.listen(PORT,async(req,res)=>{

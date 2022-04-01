@@ -141,3 +141,12 @@ hr{
     transform: rotate(45deg);
     right:26px;
 }
+
+
+#rating{
+    color: rgb(229,152,25);
+    font-size: 13px;;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    
