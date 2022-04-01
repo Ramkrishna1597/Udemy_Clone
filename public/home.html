@@ -853,16 +853,8 @@ let movies_div = document.getElementById("movies")
     //         movies_div.style.display = "none";
     // }
 try{
-let res=await fetch(`https://www.udemy.com/api-2.0/courses/?search=${input}`,{
-    "method": "GET",
-    "headers":{
-  "Accept": "application/json, text/plain, /",
-  "Authorization": "Basic THBVTThWZFcya1YwZ3RHVEVBWk03V1VxdFlSSTF6RjJ5SU03d01OQjp6VHp6d3lMSTI5V2JVeGNYeHFDRmZVSFZmbkEyZjF3Z012MFU2TkhyNUNjR3h1ZEpjWEgzNUN6VGltV0NzT2UxcFFFV3I4NFJ2UEdxVkRzZnV3cHpPek1kTVA5SUViUG9Na2xtNnpvS2w0bWVLaVFjOFZMWWVjaWtwbEdTdVJKMg==",
-
-  "Content-Type": "application/json;charset=utf-8"
-}
-
-})
+let res=await fetch(`http://127.0.0.1:5000/search/${input}`
+)
 let data= await res.json();
 return data
 // console.log(data)
@@ -886,18 +878,10 @@ console.log(err)
     {
         return false
     }
-    appendData(data)
+    appendData(data.searchs)
     // console.log(data)
 }
-// let search = document.getElementById("search_video")
-//     document.querySelector("#searchTerm").addEventListener("keypress",searchPage)
-// function searchPage(e){
-//   if(e.key=="onclick"){
-//       localStorage.setItem("searchStorage",JSON.stringify(search.value))
-//       window.location.href="search.html"
-//         return
-//   }
-// }
+
 
 
 function appendData(videoList){
@@ -1460,7 +1444,7 @@ function  music(data2){
 
 // console.log(data);
 
-data2.musics.forEach((element) => {
+data2.musics.forEach((element) => { 
 
 
 // console.log(element.image_480x270)
