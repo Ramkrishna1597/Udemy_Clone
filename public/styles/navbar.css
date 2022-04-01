@@ -204,3 +204,366 @@ header .navbar1 ul li ul li ul{
 header .navbar1 ul li:hover>ul{
     display: initial;
 }
+
+.p-8>div{
+    width:95%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin-left:2%;
+    
+}
+.p-8>h2{
+    margin:2% 0 2% 2%
+
+}
+
+
+* /*************media queries*********** */
+
+#toggle_button{
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: -400px;
+  
+    /* border: solid red 1px; */
+  }
+#toggle_button>.bar{
+    width: 100%;
+    background-color: rgb(73, 69, 69);
+    height: 3px;
+    border-radius: 10px;
+    
+  }
+
+  @media screen and (max-width:780px){
+    #toggle_button{
+        display: flex;
+        margin-left: 15px;
+        /* margin-top: -.02%; */
+        height: 15px;
+        width: 30px;
+    }
+    #navbar.active{
+        height: 190px;
+      }
+      #up_container_om{
+        background-size: cover;
+      }
+      #cart{
+        margin-right: 5%;
+    }
+      
+}
+
+@media screen and (max-width: 480px) {
+
+    #inner{
+        background-image: url("https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg");
+        height:150px;
+        width:400px;
+        background-size: 300px 386px;
+        background-repeat: no-repeat;
+        margin-left: 28px;
+        padding-top: 170px;
+        margin-bottom:10%;
+    }
+    .innerText{
+        /* display:none; */
+        padding-top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        /* padding-bottom: 20px; */
+        /* word-wrap: break-word; */
+        font-weight: lighter;
+    }
+    .innerText>button{
+        margin-top:10%;
+    }
+    
+    #navbar_ashish{
+        display:none;
+
+        
+    }
+    #videoAll{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left:10%
+        
+    }
+    .lastVideo{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left:10%;
+    }
+    #navbar>#logo{
+        margin-left:40%;
+        margin-top:-5%;
+    }
+    #navbar>#logo>img{
+        height:250%;
+        width:250%;
+       ;
+    }
+    #navbar>#cat{
+        display:none
+    }
+    #navbar>#cart{
+        margin-right: 12%;
+    }
+   
+    #navbar>#signup{
+        display:none;
+    }
+    #navbar>#login{
+        display:none
+    }
+    #searchlogo{
+        border:0;
+        background-color: white;
+        margin-left:80%
+    }
+    #searchlogo>img{
+        width:150%;
+        height:60%;
+        margin-left:1%;
+        margin-top:100%
+    }
+    #searchTerm{
+        border:0;
+        display: none;
+    }
+    #navbar>#bus{
+        display:none
+    }
+    #navbar>#teach{
+        display:none
+    }
+    #navbar>#globe{
+        display:none;
+    }
+    #navbar>#learn{
+        display:none;
+    }
+    #navbar>#wishlist{
+        display:none;
+    }
+    #navbar>#bell{
+        display:none;
+    }
+    #navbar>#profile{
+        display:none;
+    }
+    
+    #cart{
+        margin-right: 5%;
+    }
+    .p-8>div{
+        width:95%;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        margin-left:2%;
+        
+ }
+  }
+
+  /* large screen */
+
+  @media only screen and (max-width: 780px) and (min-width: 481px) {
+    .innerText{
+        font-size: smaller;
+    }
+    
+    #navbar>#logo{
+        margin-left:40%;
+        margin-top: -2%;
+    }
+    #navbar>#logo>img{
+        height:200%;
+        width:200%;
+       
+    }
+    #navbar>#cat{
+        display:none
+    }
+    /* #navbar>#cart{
+        margin-right: 0%;
+    } */
+   
+    #navbar>#signup{
+        display:none;
+    }
+    #navbar>#login{
+        display:none
+    }
+    #searchlogo{
+        border:0;
+        background-color: white;
+        margin-left:92%
+    }
+    #searchlogo>img{
+        width:120%;
+        height:50%;
+        margin-left:1%;
+        margin-top:70%
+    }
+    #searchTerm{
+        border:0;
+        display: none;
+    }
+    #navbar>#bus{
+        display:none;
+    }
+   
+    #navbar>#teach{
+        display:none
+    }
+    #navbar>#globe{
+        display:none;
+    }
+    #navbar>#learn{
+        display:none;
+    }
+    #navbar>#wishlist{
+        display:none;
+    }
+    #navbar>#bell{
+        display:none;
+    }
+    #navbar>#profile{
+        display:none;
+    }
+    #cart{
+        margin-right: 5%;
+    }
+    #videoAll{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .lastVideo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #navbar_ashish{
+        display:none
+    }
+    .p-8>div{
+        width:95%;
+        /* display:none; */
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        margin-left:2%;
+        
+ }
+
+        
+  }
+
+  /* for bottom navbar{ */
+
+   
+
+    @media only screen and (min-width: 780px) and (max-width: 1020px) {
+        #navbar>#bell{
+            display:none;
+        }
+        #navbar>#profile{
+            display:none;
+        }
+        #navbar>#bus{
+            display:none;
+        }
+        #globe{
+            display:none
+        }
+        #login{
+            display:none
+        }
+        #signup{
+            display:none
+        }
+        #videoAll{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .lastVideo{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .p-8>div{
+            width:95%;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 10px;
+            margin-left:2%;
+            
+     }
+
+    }
+    @media only screen and (min-width: 1021px) and (max-width: 1240px) {
+
+        #container_om1,#container_om2,#container_om3,#container_om4,#container_om5{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 30px;
+            width:95%;
+            margin: auto;
+            /* display: flex; */
+            margin-bottom: 20px;
+            /* border: 1px solid rgb(2, 2, 2); */
+            }
+            #globe{
+                display:none
+            }
+            #login{
+                display:none
+            }
+            #signup{
+                display:none
+            }
+            #cart{
+                margin-right: 5%;
+            }
+            #videoAll{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap:20px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            .lastVideo{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap:20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .p-8>div{
+                width:95%;
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 10px;
+                margin-left:2%;
+                
+         }
+    }
