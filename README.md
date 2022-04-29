@@ -30,7 +30,7 @@ Install-project with git
  - [Masai School](https://masaischool.com/)
 
 ## Deployed link
-🔹 Live Demo [click here](https://udemy-backend.netlfiy.app/)
+🔹 Live Demo [click here](https://cloneudemy.netlify.app/)
 
 ## 🛠 Tech Stacks
 - #### EJS
